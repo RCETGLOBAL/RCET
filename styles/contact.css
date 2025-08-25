@@ -93,8 +93,40 @@ footer {
     padding-top: 20px;
     text-align: justify;
     margin: 60px;
+    font-size: 1.5rem;
+    color: black;
+    background: yellow;
 }
 
+.promise strong {
+    font-size: 1.8rem;
+}
+
+
+.founder {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* optional: centers images and heading */
+  gap: 1rem; /* optional: space between items */
+  padding-bottom: 30px;
+}
+
+.images {
+    display: flex;
+    gap: 1rem;
+    margin-left: 60px;
+}
+.image1 img {
+    display: flex;
+}
+
+.image2 img {
+    width: 350px;
+    height: auto;
+    margin-top: 100px;
+
+    
+}
 
 
 .company-information {
