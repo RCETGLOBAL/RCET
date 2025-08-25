@@ -409,6 +409,13 @@ section > .middle-image {
 }
 
 
+.cta img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+width: 840px;
+height: auato;
+}
+
 footer {
     display: flex;
     justify-content: flex-start;

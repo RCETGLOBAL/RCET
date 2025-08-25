@@ -120,6 +120,8 @@ h1 {
     
 }
 
+
+
 .company-purpose-grid {
    background-color: var(--accent1-color); /*background-color: */
   display: grid;
@@ -205,6 +207,12 @@ h1 {
     line-height: 1.5;
     text-align: center;
     margin-top: 20px;     /* reduce the space above the paragraph */
+}
+
+.homepage-message img {
+    width: 780px;
+    height: auto;
+    margin-left: -33px;
 }
 
 /* homepage h2 color */
