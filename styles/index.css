@@ -120,64 +120,59 @@ h1 {
     
 }
 
-
-
 .company-purpose-grid {
-   background-color: var(--accent1-color); /*background-color: */
+background-color: var(--secondary-color);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 840px;
-  margin: 2rem auto;
-  padding: 1rem;
-  margin-top: -30px; /* this move to the upper portion */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify; /* Justify paragraph text */
+}
 
+.grid-item h3 {
+  width: 100%;
+  text-align: center; /* Center the heading */
+  margin: 20px 0 15px;
+  font-weight: 600;
+}
 
-.company-purpose-grid .grid-item {
-  text-align: center;
-  border: 1px solid var(--primary-color);
-  padding: 1rem;
-  background: var(--secondary-color);
+.grid-item img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
-.company-purpose-grid img {
-  max-width: 100%;
-  height: 250px; 
-  border-radius: 6px;
+/* Justify only the paragraph, but keep h3 centered */
+.grid-item p {
+    margin-top: -10px;
+  text-align: justify;
+  line-height: 1.6;
 }
 
-.company-purpose-grid h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
+/* Responsive: stack columns vertically on smaller screens */
+@media (max-width: 768px) {
+  .company-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .grid-item {
+    align-items: flex-start;
+  }
+
+  .grid-item h3 {
+    text-align: center;
+    width: 100%;
+  }
 }
-
-/* Increase paragraph font size */
-.company-purpose-grid p {
-   
-  font-size: 1rem; /* bump it up from default */
-  line-height: 1.5;   /* keep good readability */
-}
-
-
-.vision-section p {
-    margin-top: -30px; /* adjust value as needed */
-   padding-left: 20px; /* Adjust this value as needed */
-}
-
-.vision_p {
-    margin-top: -40px;
-    text-align: left;
-    ;
-
-}
-
-
-
-
 
 
 /* Features & Services separation */
